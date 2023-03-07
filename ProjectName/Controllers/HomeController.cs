@@ -7,12 +7,9 @@ namespace Name
   {
 
     [Route("/")]
-    public ActionResult Letter() 
+    public ActionResult Index() 
     {
-      LetterVariable myLetterVariable = new LetterVariable();
-      myLetterVariable.Recipient = "Lina";
-      myLetterVariable.Sender = "Jasmine";
-      return View(myLetterVariable);
+      return View();
     }
 
   }
